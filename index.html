@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form with Multimedia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <h1>Welcome to Our Website</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Our Key Services</h2>
+    <ol type="I">
+        <li>Web Development</li>
+        <li>Mobile App Development</li>
+        <li>Graphic Design</li>
+        <li>SEO Optimization</li>
+        <li>Digital Marketing</li>
+    </ol>
+
+    <!-- External Image -->
+    <h2>Our Latest Project</h2>
+    <img src="https://images.pexels.com/photos/267614/pexels-photo-267614.jpeg" alt="Project Image">
+
+    <!-- Table of Contacts -->
+    <h2>Our Contacts</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Main St, City</td>
+                <td>(123) 456-7890</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Oak Rd, Town</td>
+                <td>(987) 654-3210</td>
+                <td>janesmith@example.com</td>
+            </tr>
+            <tr>
+                <td>Emily Johnson</td>
+                <td>789 Pine Ave, Village</td>
+                <td>(555) 123-4567</td>
+                <td>emilyjohnson@example.com</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>101 Maple Dr, City</td>
+                <td>(444) 987-6543</td>
+                <td>michaelbrown@example.com</td>
+            </tr>
+            <tr>
+                <td>Sarah Davis</td>
+                <td>202 Birch Ln, Town</td>
+                <td>(333) 654-9870</td>
+                <td>sarahdavis@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2>Multimedia</h2>
+    <p>Listen to our welcome audio message:</p>
+    <audio controls>
+        <source src="audio/message.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <p>Watch our promotional video:</p>
+    <video width="320" height="240" controls>
+        <source src="video/promo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6"><br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+        </select><br><br>
+
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
